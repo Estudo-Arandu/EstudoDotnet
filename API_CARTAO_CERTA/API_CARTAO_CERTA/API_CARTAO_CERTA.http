@@ -1,0 +1,6 @@
+@API_CARTAO_CERTA_HostAddress = http://localhost:5259
+
+GET {{API_CARTAO_CERTA_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
