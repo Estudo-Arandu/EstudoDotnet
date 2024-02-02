@@ -5,6 +5,6 @@ namespace API_CARTAO_CERTA.Domain.Core.Ports.Inbound.UseCases
 {
     public interface IUseCase_ValidarConta
     {
-        public Task<BaseReturn> execute(Conta conta);
+        public Task<BaseReturn> Execute(Conta conta);
     }
 }

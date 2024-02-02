@@ -12,9 +12,19 @@ namespace API_CARTAO_CERTA.Domain.UseCase
         {
             _sql = provider.GetRequiredService<ISQLServerAdapter>();
         }
-        public Task<BaseReturn> execute(Conta conta)
+        public async Task<BaseReturn> Execute(Conta conta)
         {
-            throw new NotImplementedException();
+            try
+            {
+                //var connection = _sql.Conectar();
+                //var response = await _sql.Cadastro(connection, conta);
+                //return new BaseReturn().Sucesso(response.Body);
+                return new BaseReturn().Sucesso("Conta cadastrada!");
+            }
+            catch (Exception)
+            {
+                return new BaseReturn().ErroNegocio("Erro no cadastro do banco de dados.");
+            }
         }
     }
 }

@@ -30,15 +30,14 @@ namespace API_CARTAO_CERTA.Domain.Core.Base
         }
 
 
-        public BaseReturn ErroNegocio(string message, string stack)
+        public BaseReturn ErroNegocio(string message)
         {
             StatusCode = HttpStatusCode.BadRequest;
 
             Error = new()
             {
                 code = "400",
-                message = $"{message}",
-                info = stack,
+                message = $"{message}"
             };
 
             return this;

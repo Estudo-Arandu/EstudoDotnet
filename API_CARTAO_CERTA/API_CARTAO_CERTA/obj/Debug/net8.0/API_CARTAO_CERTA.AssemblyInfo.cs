@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("5dba24e8-bd5e-4770-b2fd-d6c7855a099c")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("API_CARTAO_CERTA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63830931da2539534a4a65e1ba990e0de13e045e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b30d58504475b34b0c374a433f23a602506f0f7")]
 [assembly: System.Reflection.AssemblyProductAttribute("API_CARTAO_CERTA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API_CARTAO_CERTA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

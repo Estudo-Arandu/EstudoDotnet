@@ -18,7 +18,7 @@ namespace API_CARTAO_CERTA.Adapters.Inbound.HTTP
         {
             try
             {
-                var response = await useCase.execute(MappingToRequest.ToRequest(requestConta));
+                var response = await useCase.Execute(MappingToRequest.ToRequest(requestConta));
                 return response.GetResponse();
             }
             catch (Exception ex) 
